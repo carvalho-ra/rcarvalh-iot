@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo-app
+  name: playground
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/carvalho-ra/k8s-gitops-iot.git
+    repoURL: https://github.com/carvalho-ra/rcarvalh-iot.git
     targetRevision: main
-    path: apps/demo-app/v1
+    path: app
 
   destination:
     server: https://kubernetes.default.svc
