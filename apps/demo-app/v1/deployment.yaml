@@ -1,20 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
-  name: demo-app
-  namespace: dev
+  name: tetris
+
 spec:
   replicas: 1
+
   selector:
     matchLabels:
-      app: demo-app
+      app: tetris
+
   template:
     metadata:
       labels:
-        app: demo-app
+        app: tetris
+
     spec:
       containers:
-        - name: nginx
-          image: nginx:1.25
-          ports:
-            - containerPort: 80
+      - name: tetris
+        image: uzyexe/tetris:latest
