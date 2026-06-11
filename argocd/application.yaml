@@ -4,7 +4,7 @@ metadata:
   name: playground
   namespace: argocd
 spec:
-  project: default
+  project: development
 
   source:
     repoURL: https://github.com/carvalho-ra/rcarvalh-iot.git
