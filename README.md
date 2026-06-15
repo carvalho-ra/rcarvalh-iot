@@ -5,9 +5,9 @@ This repository contains Kubernetes manifests deployed via Argo CD on a K3d clus
 ## Structure
 
 - app/
-  - deployment.yaml/
-  - ingress.yaml/
-  - service.yaml/
+  - deployment.yaml
+  - ingress.yaml
+  - service.yaml
 - argocd
   - application.yaml
 
