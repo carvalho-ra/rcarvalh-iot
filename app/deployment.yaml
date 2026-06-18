@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: playground
-        image: flnbrt/flappybird:latest
+        image: wil42/playground:v1
         ports:
-        - containerPort: 80
+        - containerPort: 8888
